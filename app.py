@@ -55,11 +55,8 @@ hello_movies()
  """
 
 #file 5
-""" movies = open("./movies.json", encoding="utf8")
-import json
-data = json.load(movies)
 
-def hello_movies():
+""" def hello_movies():
     answer = input("pick a movie you want to watch ").lower()
     for index, item in enumerate(data):
         print(answer["title"])
@@ -70,12 +67,13 @@ data = json.load(movies)
 def hello_movies():
     answer = input("pick a movie u would want to watch ").lower()
     if answer in json == "true":
-        print("answer")  """
-
+        print("answer")  """ ""
+import json
+movies = open("./movies.json", encoding="utf8")
+data = json.load(movies)
 
 def hello_movies():
-    movies == str(input("pick a movie that you want to watch "))
-
-
-
-
+    movies = str(input("pick a movie that you want to watch "))
+    if movies == json:
+        print(input["title"])
+hello_movies()
