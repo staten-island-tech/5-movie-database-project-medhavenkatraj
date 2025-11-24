@@ -56,24 +56,23 @@ hello_movies()
 
 #file 5
 
-""" def hello_movies():
-    answer = input("pick a movie you want to watch ").lower()
-    for index, item in enumerate(data):
-        print(answer["title"])
-    hello_movies()
-import json
+""" import json
 movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
 def hello_movies():
-    answer = input("pick a movie u would want to watch ").lower()
-    if answer in json == "true":
-        print("answer")  """ ""
-import json
-movies = open("./movies.json", encoding="utf8")
-data = json.load(movies)
+    answer = input("pick a movie you want to watch ")
+    for item in data:
+        print(item["title"])
+hello_movies() """
 
+#file 6 
+
+import json
+movies = open("./movies.json", encoding="utf8")
+data = json.load(movies)
 def hello_movies():
-    movies = str(input("pick a movie that you want to watch "))
-    if movies == json:
-        print(input["title"])
+    answer = input("search for a genre you would like to watch ")
+    for item in data:
+        if data == answer:
+            print(item["genres"])
 hello_movies()
