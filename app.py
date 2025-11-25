@@ -70,9 +70,18 @@ hello_movies() """
 import json
 movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
-def hello_movies():
+""" def hello_movies():
     answer = input("search for a genre you would like to watch ")
     for item in data:
         if data == answer:
             print(item["genres"])
+hello_movies() """
+
+
+genres = []
+def hello_movies():
+    answer = input("enter a genre i will print all relating genres of movies ")
+    for item in data:
+        if item ["genres"] == genres:
+            print(item["title"])
 hello_movies()
